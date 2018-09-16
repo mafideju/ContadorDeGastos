@@ -16,8 +16,7 @@ import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 
 // FIREBASE
-
-import './firebase/firebase';
+// import './firebase/firebase';
 
 // MAIN COMPONENT
 import AppRouter from './routers/AppRouter';
@@ -35,6 +34,8 @@ const jsx = (
 
 ReactDOM.render(<p>Carregando...</p>, document.getElementById('root'));
 
-store.dispatch(startSetExpenses()).then(() => {
-  ReactDOM.render(jsx, document.getElementById('root'));
-});
+// store.dispatch(startSetExpenses()).then(() => {
+//   ReactDOM.render(jsx, document.getElementById('root'));
+// });
+
+ReactDOM.render(jsx, document.getElementById('root'));
