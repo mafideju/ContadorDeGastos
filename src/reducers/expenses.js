@@ -1,4 +1,4 @@
-import { database } from 'firebase';
+// import { database } from 'firebase';
 
 // 02: CRIAR OS REDUCERS
 // Default Expenses Reducer
