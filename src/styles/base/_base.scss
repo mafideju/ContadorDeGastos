@@ -1,0 +1,29 @@
+@import 'settings.scss';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: $md-size;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.orange {
+  background-color: black;
+  color: orange;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+
+.margin-top-large {
+  margin-top: 5rem;
+}

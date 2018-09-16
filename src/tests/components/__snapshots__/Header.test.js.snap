@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HEADER COMPONENT TESTING 1`] = `
+<header>
+  <h1>
+    Carteira Virtual
+  </h1>
+  <NavLink
+    activeClassName="orange"
+    aria-current="page"
+    exact={true}
+    to="/"
+  >
+    Home
+  </NavLink>
+  <NavLink
+    activeClassName="orange"
+    aria-current="page"
+    to="/create"
+  >
+    Criar
+  </NavLink>
+  <NavLink
+    activeClassName="orange"
+    aria-current="page"
+    to="/help"
+  >
+    Ajuda
+  </NavLink>
+</header>
+`;
