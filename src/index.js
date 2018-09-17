@@ -12,6 +12,7 @@ import { Provider } from 'react-redux';
 
 // COMPONENTS
 import { startSetExpenses } from './actions/expenses';
+import { startRemoveExpense } from './actions/expenses';
 import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 

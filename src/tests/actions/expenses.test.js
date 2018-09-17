@@ -1,5 +1,6 @@
 import {
   startAddExpense,
+  startRemoveExpense,
   addExpense,
   editExpense,
   removeExpense,
@@ -90,6 +91,7 @@ test('TESTE PARA VERIFICAR CONEXÃO AO BANCO DE DADOS', () => {
 
 test('BUSCAR AS DESPESAS DO FIREBASE', done => {
   const store = createMockStore({});
+
   store.dispatch(startSetExpenses()).then(() => {
     const actions = store.getActions();
     expect(actions[0]).toEqual({
@@ -98,4 +100,24 @@ test('BUSCAR AS DESPESAS DO FIREBASE', done => {
     });
     done();
   });
+});
+
+// REMOVENDO DESPESAS DO BANCO DE DADOS E DA STORE
+test('REMOVER AS DESPESAS DO FIREBASE', done => {
+  const store = createMockStore({});
+  const id = expenses[0].id;
+  store
+    .dispatch(startRemoveExpense({ id }))
+    .then(() => {
+      const actions = store.getActions();
+      expect(actions[0]).toEqual({
+        type: 'REMOVE_EXPENSE',
+        id
+      });
+      return database.ref(`expenses/${id}`).once('value');
+    })
+    .then(snapshot => {
+      expect(snapshot.val()).toBeFalsy();
+      done();
+    });
 });
