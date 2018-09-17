@@ -5,12 +5,12 @@ import 'firebase/auth';
 // import 'firebase/messaging';
 
 const config = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  apiKey: 'AIzaSyBnjWQ_FqSIljCLISidpS9ZbZgftfMhOwE',
+  authDomain: 'contador-de-gastos.firebaseapp.com',
   databaseURL: 'https://contador-de-gastos.firebaseio.com',
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
+  projectId: 'contador-de-gastos',
+  storageBucket: 'contador-de-gastos.appspot.com',
+  messagingSenderId: '270712574007'
 };
 
 firebase.initializeApp(config);
