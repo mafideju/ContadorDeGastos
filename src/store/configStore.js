@@ -4,7 +4,7 @@ import filtersReducer from '../reducers/filters';
 import thunk from 'redux-thunk';
 
 // 03: CRIAR A STORE ONDE VAI O COMBINADOR DE REDUCER
-// Store Creatio
+// Store Creation
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

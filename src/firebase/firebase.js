@@ -19,6 +19,9 @@ const database = firebase.database();
 const messaging = firebase.messaging();
 const auth = firebase.auth();
 
+export { firebase, database as default };
+
+/*
 // BUSCANDO DADOS E TRAZENDO PARA A APLICAÇÃO A CADA ATUALIZAÇÃO DO DATABASE
 database.ref('expenses').on('value', snapshot => {
   const expenses = [];
