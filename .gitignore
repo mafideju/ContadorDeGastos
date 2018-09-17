@@ -1,5 +1,5 @@
 node_modules/
 keys
 public/dist/
-# .env.development
-# .env.test
+.env.development
+.env.test

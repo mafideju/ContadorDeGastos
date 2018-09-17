@@ -16,11 +16,14 @@
   "author": "Marcio Rodrigues Mafideju",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.0.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "enzyme-to-json": "^3.3.4",
     "jest": "^23.5.0",
     "react-test-renderer": "^16.5.0",
+    "redux-mock-store": "^1.5.3",
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
@@ -33,9 +36,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
-    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
@@ -59,7 +60,6 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.0",
-    "redux-mock-store": "^1.5.3",
     "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
