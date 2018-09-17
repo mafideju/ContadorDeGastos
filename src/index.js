@@ -16,7 +16,6 @@ import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 
 // FIREBASE
-import firebase from 'firebase/app';
 import './firebase/firebase';
 
 // MAIN COMPONENT
