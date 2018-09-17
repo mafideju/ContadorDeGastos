@@ -1,6 +1,6 @@
 node_modules/
 keys
 public/dist/
-src/firebase/
+# src/firebase/
 .env.development
 .env.test
