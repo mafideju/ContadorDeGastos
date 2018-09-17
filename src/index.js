@@ -34,8 +34,8 @@ const jsx = (
 
 ReactDOM.render(<p>Carregando...</p>, document.getElementById('root'));
 
-// store.dispatch(startSetExpenses()).then(() => {
-//   ReactDOM.render(jsx, document.getElementById('root'));
-// });
+store.dispatch(startSetExpenses()).then(() => {
+  ReactDOM.render(jsx, document.getElementById('root'));
+});
 
-ReactDOM.render(jsx, document.getElementById('root'));
+// ReactDOM.render(jsx, document.getElementById('root'));

@@ -80,22 +80,22 @@ test('EXPENSES PARA O DATABASE E O STORE', done => {
   });
 });
 
-// test('TESTE PARA VERIFICAR CONEXÃO AO BANCO DE DADOS', () => {
-//   const action = setExpenses(expenses);
-//   expect(action).toEqual({
-//     type: 'SET_EXPENSES',
-//     expenses
-//   });
-// });
+test('TESTE PARA VERIFICAR CONEXÃO AO BANCO DE DADOS', () => {
+  const action = setExpenses(expenses);
+  expect(action).toEqual({
+    type: 'SET_EXPENSES',
+    expenses
+  });
+});
 
-// test('BUSCAR AS DESPESAS DO FIREBASE', done => {
-//   const store = createMockStore({});
-//   store.dispatch(startSetExpenses()).then(() => {
-//     const actions = store.getActions();
-//     expect(actions[0]).toEqual({
-//       type: 'SET_EXPENSES',
-//       expenses
-//     });
-//     done();
-//   });
-// });
+test('BUSCAR AS DESPESAS DO FIREBASE', done => {
+  const store = createMockStore({});
+  store.dispatch(startSetExpenses()).then(() => {
+    const actions = store.getActions();
+    expect(actions[0]).toEqual({
+      type: 'SET_EXPENSES',
+      expenses
+    });
+    done();
+  });
+});
