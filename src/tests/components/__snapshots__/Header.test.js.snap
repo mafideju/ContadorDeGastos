@@ -9,7 +9,7 @@ exports[`HEADER COMPONENT TESTING 1`] = `
     activeClassName="orange"
     aria-current="page"
     exact={true}
-    to="/"
+    to="/dashboard"
   >
     Home
   </NavLink>

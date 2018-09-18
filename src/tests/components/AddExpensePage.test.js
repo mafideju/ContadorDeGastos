@@ -35,6 +35,6 @@ test('RENDER ADD-EXPENSE-PAGE WITH INFO', () => {
     <AddExpensePage startAddExpense={startAddExpense} history={history} />
   );
   wrapper.find(ExpenseForm).prop('onSubmit')(expenses[1]);
-  expect(history.push).toHaveBeenLastCalledWith('/');
+  expect(history.push).toHaveBeenLastCalledWith('/dashboard');
   expect(startAddExpense).toHaveBeenLastCalledWith(expenses[1]);
 });
