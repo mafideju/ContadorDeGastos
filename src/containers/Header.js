@@ -6,7 +6,7 @@ import { startLogout } from '../actions/auth';
 export const Header = ({ startLogout }) => (
   <header>
     <h1>Carteira Virtual</h1>
-    <NavLink exact to="/" activeClassName="orange">
+    <NavLink exact to="/dashboard" activeClassName="orange">
       Home
     </NavLink>
     <NavLink to="/create" activeClassName="orange">
