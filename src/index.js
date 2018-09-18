@@ -20,7 +20,7 @@ import getVisibleExpenses from './selectors/expenses';
 import { firebase } from './firebase/firebase';
 
 // MAIN COMPONENT
-import AppRouter from './routers/AppRouter';
+import AppRouter, { history } from './routers/AppRouter';
 
 // Arquivos de Teste (pasta ZONA)
 // import './ZONA/promises';
@@ -33,18 +33,30 @@ const jsx = (
   </Provider>
 );
 
-ReactDOM.render(<p>Carregando...</p>, document.getElementById('root'));
+let hasRendered = false;
+const renderApp = () => {
+  if (!hasRendered) {
+    ReactDOM.render(jsx, document.getElementById('root'));
+    hasRendered = true;
+  }
+};
 
-store.dispatch(startSetExpenses()).then(() => {
-  ReactDOM.render(jsx, document.getElementById('root'));
-});
+ReactDOM.render(<p>Carregando...</p>, document.getElementById('root'));
 
 // ReactDOM.render(jsx, document.getElementById('root'));
 
 firebase.auth().onAuthStateChanged(user => {
   if (user) {
+    store.dispatch(startSetExpenses()).then(() => {
+      renderApp();
+      if (history.location.pathname === '/') {
+        history.push('/dashboard');
+      }
+    });
     console.log('logado');
   } else {
+    renderApp();
+    history.push('/');
     console.log('deslogado');
   }
 });
