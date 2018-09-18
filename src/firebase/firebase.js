@@ -18,8 +18,9 @@ firebase.initializeApp(config);
 const database = firebase.database();
 const auth = firebase.auth();
 // const messaging = firebase.messaging();
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, database as default };
+export { firebase, googleAuthProvider, database as default };
 
 /*
 // BUSCANDO DADOS E TRAZENDO PARA A APLICAÇÃO A CADA ATUALIZAÇÃO DO DATABASE
@@ -128,7 +129,7 @@ database
   });
 
 // REMOVER DADOS DO DATABASE
-database.ref('solteiro').remove();
+database.ref('solteiro').b();
 
 // ATUALIZAR (UPDATE) O DATABASE
 database.ref().update({

@@ -17,7 +17,7 @@ import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 
 // FIREBASE
-import './firebase/firebase';
+import { firebase } from './firebase/firebase';
 
 // MAIN COMPONENT
 import AppRouter from './routers/AppRouter';
@@ -40,3 +40,11 @@ store.dispatch(startSetExpenses()).then(() => {
 });
 
 // ReactDOM.render(jsx, document.getElementById('root'));
+
+firebase.auth().onAuthStateChanged(user => {
+  if (user) {
+    console.log('logado');
+  } else {
+    console.log('deslogado');
+  }
+});

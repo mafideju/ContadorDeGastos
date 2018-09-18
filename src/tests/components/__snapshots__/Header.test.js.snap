@@ -27,5 +27,10 @@ exports[`HEADER COMPONENT TESTING 1`] = `
   >
     Ajuda
   </NavLink>
+  <button
+    onClick={[Function]}
+  >
+    Sair
+  </button>
 </header>
 `;

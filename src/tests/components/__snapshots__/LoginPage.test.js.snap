@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LOGIN PAGE COMPONENT TESTING 1`] = `
+<div>
+  <button>
+    Entrar
+  </button>
+</div>
+`;
