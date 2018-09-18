@@ -2,7 +2,6 @@ import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 
-import Footer from '../containers/Footer';
 import LoginPage from '../containers/LoginPage';
 
 import AddExpensePage from '../components/AddExpensePage';
@@ -25,7 +24,6 @@ const AppRouter = () => (
         <Route path="/help" component={HelpPage} />
         <Route component={NotFoundPage} />
       </Switch>
-      <Footer />
     </div>
   </Router>
 );

@@ -1,7 +1,3 @@
-// STYLES
-import './index.scss';
-import 'react-dates/lib/css/_datepicker.css';
-
 // REACT
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -21,6 +17,10 @@ import { firebase } from './firebase/firebase';
 
 // MAIN COMPONENT
 import AppRouter, { history } from './routers/AppRouter';
+
+// STYLES
+import './styles/index.scss';
+import 'react-dates/lib/css/_datepicker.css';
 
 // Arquivos de Teste (pasta ZONA)
 // import './ZONA/promises';

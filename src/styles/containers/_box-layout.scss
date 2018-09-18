@@ -1,0 +1,21 @@
+.box-layout {
+  align-items: center;
+  background: url('/images/bgcoins100.jpg');
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.box-layout__box {
+  background: fade-out(white, 0.25);
+  border-radius: 3px;
+  padding: $lg-size $md-size;
+  text-align: center;
+  width: 25rem;
+}
+
+.box-layout__title {
+  margin: 0 0 $md-size 0;
+  line-height: 1;
+}
