@@ -18,7 +18,12 @@ export const Header = ({ startLogout }) => (
       Ajuda
     </NavLink>
     */}
-        <button onClick={startLogout}>Sair</button>
+        <button
+          className="button button--logout button--animated__right"
+          onClick={startLogout}
+        >
+          Sair
+        </button>
       </div>
     </div>
   </header>

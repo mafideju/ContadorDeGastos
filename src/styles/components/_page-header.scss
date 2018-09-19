@@ -1,0 +1,14 @@
+.page-header {
+  background: #f7f7f7;
+  margin-bottom: $lg-size;
+  padding: $lg-size 0;
+
+  &__title {
+    font-weight: 300;
+    margin: 0;
+
+    &--highlight {
+      font-weight: 700;
+    }
+  }
+}

@@ -72,6 +72,7 @@ class ExpenseForm extends Component {
         <form onSubmit={this.onSubmit}>
           <input
             type="text"
+            className="text-input"
             placeholder="Descrição"
             autoFocus
             value={this.state.description}
@@ -79,6 +80,7 @@ class ExpenseForm extends Component {
           />
           <input
             type="text"
+            className="text-input"
             placeholder="Valor"
             value={this.state.amount}
             onChange={this.onAmountChange}
@@ -94,6 +96,7 @@ class ExpenseForm extends Component {
           />
 
           <textarea
+            className="text-area"
             placeholder="Detalhes da Despesa"
             value={this.state.note}
             onChange={this.onNoteChange}

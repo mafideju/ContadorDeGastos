@@ -1,5 +1,9 @@
 @import 'settings.scss';
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -18,13 +22,7 @@ button:disabled {
   cursor: default;
 }
 
-.orange {
-  background-color: black;
-  color: orange;
-  font-weight: 700;
-  letter-spacing: 0.5rem;
-}
-
-.margin-top-large {
-  margin-top: 5rem;
+::selection {
+  background-color: $orange-two;
+  color: white;
 }

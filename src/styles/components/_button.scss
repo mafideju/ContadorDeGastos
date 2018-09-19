@@ -59,11 +59,39 @@
     animation-timing-function: ease-out;
   }
 
+  &--animated__left {
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  &--animated__right {
+    animation-name: moveInRight;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
   &--login {
     margin-top: 1rem;
     background-color: $orange-two;
     color: white;
     font-weight: 500;
+  }
+
+  &--expense {
+    margin-top: 3rem;
+    background-color: $orange-two;
+    color: white;
+    font-weight: 500;
+  }
+
+  &--logout {
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 1.75rem;
   }
 }
 
@@ -75,6 +103,37 @@
 
   80% {
     transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(15rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
   }
 
   100% {

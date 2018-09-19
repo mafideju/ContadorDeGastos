@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import ExpenseListItem from './ExpenseListItem';
 
 export const ExpenseList = props => (
-  <div>
+  <div className="content-container">
     {props.expenses.length === 0 ? (
       <h3>
         Adicione Uma Despesa para <Link to="/create">Começar sua Carteira</Link>
