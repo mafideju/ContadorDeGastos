@@ -34,7 +34,7 @@ export class ExpenseListFilters extends Component {
   };
   render() {
     return (
-      <div className="content-container">
+      <div className="content-container content-container--inputs">
         <div className="input-group">
           <div className="input-group__item">
             <input

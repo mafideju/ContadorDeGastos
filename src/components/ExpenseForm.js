@@ -68,8 +68,10 @@ class ExpenseForm extends Component {
   render() {
     return (
       <div>
-        {this.state.error && <h4>{this.state.error}</h4>}
-        <form onSubmit={this.onSubmit}>
+        <form className="form" onSubmit={this.onSubmit}>
+          {this.state.error && (
+            <h4 className="form__error">{this.state.error}</h4>
+          )}
           <input
             type="text"
             className="text-input"
@@ -101,7 +103,11 @@ class ExpenseForm extends Component {
             value={this.state.note}
             onChange={this.onNoteChange}
           />
-          <button>Adicionar Despesa</button>
+          <div>
+            <button className="button button--expense button--expense__edit">
+              Adicionar Despesa
+            </button>
+          </div>
         </form>
       </div>
     );

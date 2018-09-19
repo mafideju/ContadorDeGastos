@@ -1,8 +1,14 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer className="margin-top-large">
-    <h5>Desenvolvido por &copy;MAFFEE em Setembro de 2018</h5>
+  <footer className="footer">
+    <div className="footer__content">
+      <div className="content-container">
+        <h4 className="footer__content--text">
+          Desenvolvido em 2018 pela &copy;MAFFEE usando React / Redux
+        </h4>
+      </div>
+    </div>
   </footer>
 );
 

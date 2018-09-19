@@ -11,6 +11,7 @@ import { startSetExpenses } from './actions/expenses';
 import { startRemoveExpense } from './actions/expenses';
 import { login, logout } from './actions/auth';
 import getVisibleExpenses from './selectors/expenses';
+import LoadingPage from './components/LoadingPage';
 
 // FIREBASE
 import { firebase } from './firebase/firebase';
@@ -41,7 +42,7 @@ const renderApp = () => {
   }
 };
 
-ReactDOM.render(<p>Carregando...</p>, document.getElementById('root'));
+ReactDOM.render(<LoadingPage />, document.getElementById('root'));
 
 // ReactDOM.render(jsx, document.getElementById('root'));
 

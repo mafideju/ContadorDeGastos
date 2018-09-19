@@ -6,9 +6,14 @@
 
 @import './containers/box-layout';
 @import './containers/content-container';
+@import './containers/footer';
 @import './containers/header';
 
 @import './components/button';
-@import './components/page-header';
 @import './components/input-group';
 @import './components/inputs';
+@import './components/form';
+@import './components/list';
+@import './components/page-header';
+@import './components/spinner';
+@import './components/visibility';

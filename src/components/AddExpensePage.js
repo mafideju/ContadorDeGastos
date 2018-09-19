@@ -10,9 +10,15 @@ export class AddExpensePage extends Component {
   };
   render() {
     return (
-      <div className="content-container">
-        <h1>Add Expense Dashboard Component!!</h1>
-        <ExpenseForm onSubmit={this.onSubmit} />
+      <div>
+        <div className="page-header">
+          <div className="content-container">
+            <h1 className="page-header__title">Adicione Aqui Sua Despesa</h1>
+          </div>
+        </div>
+        <div className="content-container">
+          <ExpenseForm onSubmit={this.onSubmit} />
+        </div>
       </div>
     );
   }

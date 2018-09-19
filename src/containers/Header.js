@@ -8,7 +8,9 @@ export const Header = ({ startLogout }) => (
     <div className="content-container">
       <div className="header__content">
         <NavLink className="header__title" exact to="/dashboard">
-          <h1>Controlador de Gastos</h1>
+          <h1 className="header__title--animated-left">
+            Controlador de Gastos
+          </h1>
         </NavLink>
         {/*
     <NavLink to="/create" activeClassName="orange">

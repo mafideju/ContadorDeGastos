@@ -10,6 +10,7 @@
   font-size: $font-size-large;
   font-weight: 400;
   padding: $sm-size;
+  width: 100%;
 }
 
 .select {
@@ -19,5 +20,4 @@
 .text-area {
   @extend .text-input;
   height: 10rem;
-  width: 80%;
 }
